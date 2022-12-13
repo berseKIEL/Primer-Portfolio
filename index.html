@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Importación de CSS -->
+    <link rel="stylesheet" href="static/css/styles.css" />
+    <link rel="stylesheet" href="static/css/animation.css" />
+
+    <!-- Fabicon -->
+    <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico" />
+
+    <!-- Importación de Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100;300;400;700;900&family=Zen+Dots&display=swap" rel="stylesheet" />
+
+    <title>Barco Exequiel - Porfolio</title>
+  </head>
+  <body>
+    <!--
+         Se configurá el porfolio de la siguiente forma
+         Header -> Navbar
+         Main -> Inicio - Perfil - Habilidades - Educación
+         Footer -> Derechos del Autor y copyright - Contacto - Redes Social
+     -->
+
+    <!-- Navbar -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav-logo">Barco Exequiel</a>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list grid">
+            <li class="nav-item">
+              <a href="#inicio" class="nav-link">
+                <i class="fa-solid fa-house nav-icon"></i>
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#perfil" class="nav-link">
+                <i class="fa-solid fa-address-card nav-icon"></i>
+                Perfil
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#habilidades" class="nav-link">
+                <i class="fa-solid fa-hand nav-icon"></i>
+                Habilidades
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#educacion" class="nav-link">
+                <i class="fa-solid fa-graduation-cap nav-icon"></i>
+                Educación
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#proyectos" class="nav-link">
+                <i class="fa-solid fa-sheet-plastic nav-icon"></i>
+                Proyectos
+              </a>
+            </li>
+            <li class="nav-item">
+              <button href="" class="nav-link btn-reset" id="contactameBtn" data-id="contactameModal">
+                <i class="fa-solid fa-envelope"></i>
+                ¡Contactame!
+              </button>
+            </li>
+          </ul>
+          <i class="fa-solid fa-xmark nav-close" id="nav-close"></i>
+        </div>
+
+        <div class="nav-btns">
+          <div class="cambiar-tema">
+            <i class="fa-solid fa-toggle-off nav-icon" id="cambio-tema"></i>
+          </div>
+          <div class="nav-toggle">
+            <i class="fa-solid fa-bars nav-icon" id="nav-toggle"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+      <div class="container">
+        <!-- Sección del Inicio -->
+        <section class="seccion inicio" id="inicio">
+          <!-- Contenedor total de la seccion -->
+          <div class="inicio-container">
+            <!-- Mensaje de inicio -->
+            <div class="inicio-message-container">
+              <img src="static/img/argprog.png" alt="" class="inicio-message-icon" />
+              <span class="seccion-titulo-grande inicio-message-span"> Argentina Programa</span>
+            </div>
+            <!-- Contenido del perfil -->
+            <div class="inicio-content grid">
+              <div class="inicio-social">
+                <a href="#discord">
+                  <i class="fa-brands fa-discord inicio-social-icon"></i>
+                </a>
+                <a href="#telegram">
+                  <i class="fa-brands fa-telegram inicio-social-icon"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/exequielbarco/" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-linkedin inicio-social-icon"></i>
+                </a>
+                <a href="https://github.com/berseKIEL" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github inicio-social-icon"></i>
+                </a>
+              </div>
+              <div class="inicio-img">
+                <img src="static/img/pf.png" alt="" class="inicio-image" />
+              </div>
+              <div class="inicio-data">
+                <h1 class="inicio-titulo seccion-titulo">Barco Exequiel</h1>
+                <p class="inicio-subtitulo seccion-subtitulo">Software Developer</p>
+              </div>
+            </div>
+            <div class="inicio-btns">
+              <a href="static/extra/CVen-es.pdf" target="_blank" rel="noopener noreferrer" class="btn">
+                <i class="fa-solid fa-download inicio-btns-icon"></i>
+                Ver mi CV
+              </a>
+              <button href="" class="btn-reset btn" id="contactameBtn" data-id="contactameModal">
+                <i class="fa-solid fa-envelope inicio-btns-icon"></i>
+                ¡Contactame!
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <div class="seccion-hr"></div>
+
+        <!-- Sección Quien soy -->
+        <section class="seccion perfil" id="perfil">
+          <div class="perfil-content">
+            <i class="fa-solid fa-address-card seccion-icon"></i>
+            <h1 class="seccion-titulo">Acerca de mí</h1>
+            <span class="seccion-subtitulo">¿Quien Soy?</span>
+
+            <img src="static/img/hero.jpg" alt="" class="perfil-img" />
+            <div class="seccion-texto">
+              <p class="perfil-parrafo">
+                <!-- Parrafo 1 -->
+                <span>Hola, mi nombre es <span class="perfil-nombre">Exequiel Barco.</span> </span>
+                <!-- Parrafo 2 -->
+                <span>Soy un <strong>Desarrollador Jr.</strong> en busqueda de una Profesión de programación a la cual yo sienta que pertenezca.</span>
+                <!-- Parrafo 3 -->
+                <span>
+                  Estudié en el
+                  <a href="https://www.itse.gob.ar/" class="perfil-link" target="_blank" rel="noopener noreferrer">Instituto Técnologico de Santiago del Estero</a>
+                  y me recibí como <span class="perfil-nombre">Técnico en Programación</span>
+                  desarrollando habilidades blandas como trabajo en equipo y gestión de proyectos de software aprendiendo lenguajes de programación.
+                </span>
+                <!-- Parrafo 4 -->
+                <span
+                  >Continuo formandome realizando cursos y capacitaciones continuamente y sigo aprendiendo <strong>nuevas técnologicas</strong> todos los días con el objetivo de convertirme en un
+                  <strong>Desarrollador de Software</strong> competente
+                </span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <div class="seccion-hr"></div>
+
+        <!-- Habilidades como Programador -->
+        <section class="seccion habilidades" id="habilidades">
+          <div class="habilidades-container">
+            <div class="habilidades-titulos">
+              <i class="fa-solid fa-hand seccion-icon"></i>
+              <h2 class="seccion-titulo">Habilidades y Aptitudes</h2>
+            </div>
+
+            <div class="habilidades-tabs">
+              <div class="habilidades-btn btn-flex habilidades-activo" data-target="#herramientas">
+                <i class="fa-solid fa-message seccion-icon"></i>
+                <span class="seccion-titulo"> Herramientas </span>
+              </div>
+              <div class="habilidades-btn btn-flex" data-target="#tecnologias">
+                <i class="fa-solid fa-laptop-code seccion-icon"></i>
+                <span class="seccion-titulo"> Tecnologias </span>
+              </div>
+            </div>
+
+            <div class="habilidades-secciones">
+              <div class="habilidades-contenido habilidades-activo" data-content id="herramientas">
+                <div class="habilidades-contenedor-uno grid">
+                  <div class="habilidades-habilidad-uno">
+                    <i class="fa-brands fa-git-alt seccion-icon"></i>
+                    <h3 class="seccion-subtitulo habilidades-titulo">Git</h3>
+                  </div>
+                  <div class="habilidades-habilidad-uno">
+                    <i class="fa-brands fa-github seccion-icon"></i>
+                    <h3 class="seccion-subtitulo habilidades-titulo">Github</h3>
+                  </div>
+                  <div class="habilidades-habilidad-uno">
+                    <i class="fa-brands fa-confluence seccion-icon"></i>
+                    <h3 class="seccion-subtitulo habilidades-titulo">Jira</h3>
+                  </div>
+                  <div class="habilidades-habilidad-uno">
+                    <i class="fa-brands fa-trello seccion-icon"></i>
+                    <h3 class="seccion-subtitulo habilidades-titulo">Trello</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="habilidades-contenido" data-content id="tecnologias">
+                <div class="habilidades-contenedor-dos">
+                  <!-- Como Frontend -->
+                  <div class="habilidades-contenido-dos habilidades-cerradas">
+                    <div class="habilidades-habilidad-dos-header">
+                      <i class="fa-solid fa-image seccion-icon"></i>
+                      <h1 class="habilidades-titulo">Desarrollador Front-End</h1>
+                      <i class="fa-solid fa-angle-down habilidades-flecha seccion-icon"></i>
+                    </div>
+
+                    <div class="habilidades-habilidad-dos-lista grid">
+                      <div class="habilidades-habilidad-dos-data">
+                        <i class="fa-brands fa-html5 seccion-icon"></i>
+                        <h3 class="habilidades-titulo">HTML</h3>
+                      </div>
+                      <div class="habilidades-habilidad-dos-data">
+                        <i class="fa-brands fa-css3-alt seccion-icon"></i>
+                        <h3 class="habilidades-titulo">CSS</h3>
+                      </div>
+                      <div class="habilidades-habilidad-dos-data">
+                        <i class="fa-brands fa-js seccion-icon"></i>
+                        <h3 class="habilidades-titulo">JavaScript</h3>
+                      </div>
+                      <div class="habilidades-habilidad-dos-data">
+                        <i class="fa-brands fa-angular seccion-icon"></i>
+                        <h3 class="habilidades-titulo">Angular</h3>
+                      </div>
+                      <div class="habilidades-habilidad-dos-data">
+                        <i class="fa-brands fa-react seccion-icon"></i>
+                        <h3 class="habilidades-titulo">React</h3>
+                      </div>
+                      <div class="habilidades-habilidad-dos-data">
+                        <i class="fa-brands fa-bootstrap seccion-icon"></i>
+                        <h3 class="habilidades-titulo">Bootstrap</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Como Backend -->
+                  <div class="habilidades-contenido-dos habilidades-cerradas">
+                    <div class="habilidades-habilidad-dos-header">
+                      <i class="fa-solid fa-code seccion-icon"></i>
+                      <h1 class="habilidades-titulo">Desarrollador Back-End</h1>
+                      <i class="fa-solid fa-angle-down habilidades-flecha seccion-icon"></i>
+                    </div>
+
+                    <div class="habilidades-habilidad-dos-lista grid">
+                      <div class="habilidades-habilidad-dos-data">
+                        <i class="fa-brands fa-python seccion-icon"></i>
+                        <h3 class="habilidades-titulo">Python</h3>
+                      </div>
+
+                      <div class="habilidades-habilidad-dos-data">
+                        <i class="fa-brands fa-java seccion-icon"></i>
+                        <h3 class="habilidades-titulo">Java</h3>
+                      </div>
+
+                      <div class="habilidades-habilidad-dos-data">
+                        <i class="fa-brands fa-js seccion-icon"></i>
+                        <h3 class="habilidades-titulo">JavaScript</h3>
+                      </div>
+
+                      <div class="habilidades-habilidad-dos-data">
+                        <i class="fa-solid fa-database seccion-icon"></i>
+                        <h3 class="habilidades-titulo">MySQL</h3>
+                      </div>
+
+                      <div class="habilidades-habilidad-dos-data">
+                        <i class="fa-solid fa-database seccion-icon"></i>
+                        <h3 class="habilidades-titulo">MongoDB</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="habilidades-mensaje">
+              <i class="fa-solid fa-gears"></i>
+              <div class="mensaje-mensaje-container">
+                <span class="seccion-texto">¡Estudiando por mi cuenta,</span><span class="seccion-texto"> aprendiendo academicamente</span
+                ><span class="seccion-texto"> y dispuesto a profundizar muchisimo más!</span>
+              </div>
+              <i class="fa-solid fa-gears"></i>
+            </div>
+          </div>
+        </section>
+
+        <div class="seccion-hr"></div>
+
+        <!-- Educación -->
+        <section class="seccion educacion" id="educacion">
+          <div class="educacion-container">
+            <div class="educacion-titulos">
+              <i class="fa-solid fa-graduation-cap seccion-icon"></i>
+              <h2 class="seccion-titulo">Educación</h2>
+              <span class="seccion-subtitulo"> relacionado a la programación </span>
+            </div>
+
+            <div class="educacion-contenedor grid">
+              <div class="educacion-contenido">
+                <img src="https://www.itse.gob.ar/wp-content/uploads/2021/04/logohero-300x129.png" alt="ITSE" class="educacion-icon" />
+                <span class="seccion-subtitulo educacion-analitico">Técnico en Programación</span>
+                <span class="seccion-texto">Finalizado</span>
+              </div>
+
+              <div class="educacion-contenido">
+                <img src="static/img/argprogsp.png" alt="seprogramar" class="educacion-icon" />
+                <span class="seccion-subtitulo educacion-analitico">Certificación "Sé Programar"</span>
+                <span class="seccion-texto">Finalizado</span>
+              </div>
+
+              <div class="educacion-contenido">
+                <img src="static/img/argprogyp.png" alt="yoprogramo" class="educacion-icon" />
+                <span class="seccion-subtitulo educacion-analitico">Full-Stack Developer</span>
+                <span class="seccion-texto">En proceso</span>
+              </div>
+
+              <div class="educacion-contenido">
+                <img src="static/img/alura.png" alt="yoprogramo" class="educacion-icon" />
+                <span class="seccion-subtitulo educacion-analitico">Programa ONE Web Developer</span>
+                <span class="seccion-texto">En proceso</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="seccion-hr"></div>
+
+        <!-- Proyectos -->
+        <section class="seccion proyectos" id="proyectos">
+          <div class="proyectos-container">
+            <!-- Titulo -->
+            <div class="proyectos-titulos">
+              <i class="fa-solid fa-sheet-plastic seccion-icon"></i>
+              <h1 class="seccion-titulo">Proyectos</h1>
+            </div>
+            <div class="proyectos-contenedor-grid grid">
+              <div class="proyectos-contenido">
+                <img src="static/img/proy1.jpg" alt="" class="img proyectos-image" />
+                <i class="fa-solid fa-angle-down seccion-icon proyectos-flecha"></i>
+                <div class="proyectos-data">
+                  <span class="seccion-titulo proyecto-data-titulo">
+                    Sistema de Gestión de <br />
+                    Alumnos y Docentes
+                  </span>
+                  <span class="seccion-texto">En proceso.</span>
+                  <div class="proyectos-data-icons">
+                    <a href="https://github.com/berseKIEL/WebISPPFlask">
+                      <i class="fa-brands fa-github seccion-icon"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-square-arrow-up-right seccion-icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="proyectos-contenido">
+                <img src="static/img/proy2.png" alt="" class="img proyectos-image" />
+                <i class="fa-solid fa-angle-down seccion-icon proyectos-flecha"></i>
+                <div class="proyectos-data">
+                  <span class="seccion-titulo proyecto-data-titulo">
+                    Trabajo Practico - Porfolio
+                    <br />
+                    ITSE
+                  </span>
+                  <span class="seccion-texto">Finalizado.</span>
+                  <div class="proyectos-data-icons">
+                    <a href="https://github.com/berseKIEL/TPOProgIII" target="_blank" rel="noopener noreferrer">
+                      <i class="fa-brands fa-github seccion-icon"></i>
+                    </a>
+                    <a href="https://tpo-barcoexequiel.netlify.app/" target="_blank" rel="noopener noreferrer">
+                      <i class="fa-solid fa-square-arrow-up-right seccion-icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Proyectos  -->
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-titulos">
+          <div class="seccion-titulo footer-titulo">Barco Exequiel</div>
+          <div class="seccion-subtitulo footer-subtitulo">Desarrollador Web</div>
+        </div>
+
+        <div class="footer-informacion-grid grid">
+          <div class="footer-informacion" id="discord">
+            <i class="fa-brands fa-discord seccion-icon"></i>
+            <h2 class="seccion-titulo footer-informacion-titulo">Discord</h2>
+            <span class="seccion-subtitulo footer-informacion-subtitulo"> BerseKIEL#3956 </span>
+          </div>
+
+          <div class="footer-informacion" id="telegram">
+            <i class="fa-brands fa-telegram seccion-icon"></i>
+            <h2 class="seccion-titulo footer-informacion-titulo">Telegram</h2>
+            <span class="seccion-subtitulo footer-informacion-subtitulo"> @kielito </span>
+          </div>
+        </div>
+
+        <div class="footer-social-media">
+          <div class="footer-social">
+            <a href="https://www.facebook.com/FateofKiel/" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-facebook seccion-icon"></i>
+            </a>
+          </div>
+          <div class="footer-social">
+            <a href="https://twitter.com/ExekielBaracus" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-twitter seccion-icon"></i>
+            </a>
+          </div>
+        </div>
+        <span class="footer-texto seccion-texto"> Copyright@ 2022 Barco Exequiel. Todos los derechos reservados </span>
+      </div>
+    </footer>
+
+    <!-- ¡Contactame! -->
+    <div class="contactameModal" id="contactameModal" role="contact" tabindex="-1">
+      <div class="contactame-contenido">
+        <div class="contactame-header">
+          <h1 class="contactame-titulo">Envio de Correo</h1>
+          <i class="fa-solid fa-xmark contactame-cerrar" id="contactame-cerrar" data-id="contactameModal" aria-label="Close"></i>
+        </div>
+        <form action="#" class="contactame-form" id="contactame-form">
+          <!-- Campos  -->
+          <div class="contactame-campos grid">
+            <!-- Primer Campo: Nombre -->
+            <div class="contactame-campo contactame-campo-nombre">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" placeholder="Nombre" minlength="6" />
+            </div>
+            <!-- Segundo Campo: Correo -->
+            <div class="contactame-campo contactame-campo-correo">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" placeholder="Correo" />
+            </div>
+            <!-- Tercer Campo: Mensaje -->
+            <div class="contactame-campo contactame-campo-mensaje">
+              <textarea placeholder="Mensaje" rows="5"></textarea>
+            </div>
+          </div>
+          <div class="contacto-grupo-btn">
+            <button type="submit" class="btn-reset btn" id="contactame-submit">Enviar mensaje</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Mi script -->
+    <script src="static/js/main.js"></script>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/99b5397c27.js" crossorigin="anonymous"></script>
+  </body>
+</html>
