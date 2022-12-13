@@ -272,10 +272,6 @@ img {
 }
 
 /* inicio Page! */
-.inicio {
-  padding-top: 1rem;
-}
-
 .inicio-container {
   gap: 2.5rem;
   display: flex;
@@ -481,7 +477,7 @@ img {
 }
 
 .habilidades-color-morado {
-  color:var(--color-barra);
+  color: var(--color-barra);
 }
 
 .habilidades-titulos {
@@ -1048,6 +1044,7 @@ img {
 
   .inicio {
     margin: 0;
+    padding-top: 7rem;
   }
 
   .inicio-content {
