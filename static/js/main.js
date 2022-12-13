@@ -88,21 +88,15 @@ const proyCont = document.querySelectorAll('.proyectos-contenido');
 function toggleProy() {
 
     for (i=0; i < proyCont.length; i++) {
-        proyCont[i].classList.remove('proyectos-abiertos')
+        proyCont[i].classList.remove('proyectos-abiertos');
     }
 
-    if (this.classList.contains('proyectos-abiertos')) {
-        this.classList.remove('proyectos-abiertos')
-    }
-    else {
-        this.classList.add('proyectos-abiertos')
-    }
+    this.classList.add('proyectos-abiertos');
 }
 
 proyCont.forEach((el) => {
     el.addEventListener('click', toggleProy)
-})
-
+});
 
 
 // Contactame Modal
